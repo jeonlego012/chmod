@@ -85,6 +85,9 @@ class ChangeOldModifiedFileModeIntoReadOnlyWidget(QWidget):
 				#print(subprocess.getstatusoutput("ls -l " + cur_fname)[1])
 				os.chmod(cur_fname, 0o444)
 		self.printCurrentDir()
+		
+	def tellStatus(self):
+		print("status!")
 
 class ChangeMainWindow(QMainWindow):
 	def __init__(self):
