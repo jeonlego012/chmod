@@ -87,7 +87,7 @@ class ChangeOldModifiedFileModeIntoReadOnlyWidget(QWidget):
 		self.printCurrentDir()
 		
 	def tellStatus(self):
-		print("status")
+		print("status!")
 
 class ChangeMainWindow(QMainWindow):
 	def __init__(self):
